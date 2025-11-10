@@ -2,5 +2,26 @@
   "dependencies": {
     "axios": "^1.13.2",
     "lucide-react": "^0.552.0"
-  }
+  },
+  "name": "mern-thinkboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrian-HO/mern-thinkboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Adrian-HO/mern-thinkboard/issues"
+  },
+  "homepage": "https://github.com/Adrian-HO/mern-thinkboard#readme"
 }
