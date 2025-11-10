@@ -17,7 +17,7 @@ const _dirname = path.resolve();
 //Middleware
 //function allows us to get access to the request.body value like {title, content} that we send as a json
 //Middleware will parse json bodies: req.body
-if (process.env.NODE_ENV !== "development") {
+if (process.env.NODE_ENV !== "production") {
   app.use(
     cors({
     origin: "http://localhost:5173",
@@ -37,7 +37,7 @@ app.use(rateLimiter);
   //app.use("/api/product", productRoutes);
 
 
-  if (process.env.NODE_ENV === "development") {
+  if (process.env.NODE_ENV === "production") {
   const distDir = path.join(_dirname, "../frontend/dist");
   app.use(express.static(distDir));
 
